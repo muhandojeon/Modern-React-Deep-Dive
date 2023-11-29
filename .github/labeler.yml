@@ -1,0 +1,61 @@
+version: 1
+labels:
+  - label: "1장"
+    files:
+      - "1장/*"
+
+  - label: "2장"
+    files:
+      - "2장/*"
+
+  - label: "3장"
+    files:
+      - "3장/*"
+
+  - label: "4장"
+    files:
+      - "4장/*"
+
+  - label: "5장"
+    files:
+      - "5장/*"
+
+  - label: "6장"
+    files:
+      - "6장/*"
+
+  - label: "7장"
+    files:
+      - "7장/*"
+
+  - label: "8장"
+    files:
+      - "8장/*"
+
+  - label: "9장"
+    files:
+      - "9장/*"
+
+  - label: "10장"
+    files:
+      - "10장/*"
+
+  - label: "11장"
+    files:
+      - "11장/*"
+
+  - label: "12장"
+    files:
+      - "12장/*"
+
+  - label: "13장"
+    files:
+      - "13장/*"
+
+  - label: "14장"
+    files:
+      - "14장/*"
+
+  - label: "15장"
+    files:
+      - "15장/*"
