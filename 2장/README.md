@@ -105,4 +105,9 @@
 - try catch
 - react query onError
 - Error boundary 셋 다 쓰는게 좋은가?
+  - 에러바운더리를 쓸 수 있는 환경에서는 에러바운더리를 쓰는 게 좋다고 생각한다
+    - 가장 선언적으로, 리액트스럽게 핸들링하는 방향이라고 생각한다
+  - 그러면 에러 시 토스트만을 띄워야하는 경우엔?
+    - 에러바운더리에서 children을 그대로 리턴하고
+    - 토스트 메서드를 호출하면 어떨까?
 - https://fe-developers.kakaoent.com/2022/221110-error-boundary/
