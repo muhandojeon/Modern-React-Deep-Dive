@@ -10,6 +10,7 @@
 - styled-components는 개발모드와 프로덕션에서 다르게 동작한다.
   - 프로덕션에서는 HTML에 스타일을 적용하지 않고, 자바스크립트를 활용해 CSSOM 트리에 직접 스타일을 넣음
 - https://www.epicweb.dev/why-i-wont-use-nextjs
+- https://leerob.io/blog/using-nextjs
 
 ## 창완
 
