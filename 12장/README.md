@@ -9,7 +9,7 @@
 - async vs defer 의 경우 defer를 우선적으로 사용하는 것이 좋다. (스크립트마다 다르다!)
 - [폰트](https://drafts.csswg.org/css-fonts/#font-display-desc)
 - 서버 사이드에서 이미지를 만드는 동작이 있고, TTFB가 느려진 이슈가 있는데 요걸 해결한 경험 ->
-- above the fold 란 신문의 전면부분을 의미하는데, 웹에서는 사용자가 보는 화면을 의미한다.
+- above the fold 란 신문의 전면부분을 의미하는데, 웹에서는 사용자가 처음 보는 화면을 의미한다.
 - DOM 크기의 기준이 딱히 없었는데 구글의 기준을 보며 깨달음을 얻었다.
 
 # 우창완
