@@ -1,0 +1,31 @@
+- XSS: 제 3자가 웹사이트에 악성 스크립트를 삽입해 실행할 수 있는 취약점
+- dangerouslySetInnerHTML prop
+	- DOM의 innerHTML을 특정 내용으로 교체할 수 있는 방법
+	- '__html'을 키로 가지는 객체만 인수로 받을 수 있다
+	- 객체 값에는 별도의 제한이 없기 때문에 검증이 필요하다
+- useRef
+	- 위와 동일
+- XSS 문제를 피하는 법
+	- 제 3자가 삽입할 수 있는 HTML을 안전한 HTML 코드로 치환하는 과정을 거치면 된다. 이 과정을 이스케이프 / 새니타이즈라고 한다.
+	- 라이브러리를 통해 허용할 html 태그와 속성을 정의할 수 있다.
+	- 리액트에는 기본적으로 이스케이프 작업이 포함되어 있다.
+- getServerSideProps와 서버 컴포넌트 사용 시 보안에 주의할 것. 최소한의 데이터만 props로 내려주어야 한다.
+- HTTP 보안 헤더
+	- Strict-Transport-Security: HTTML로 접근하는 요청을 HTTPS로 변경되게
+	- X-XSS-Protection: XSS 취약점이 발견되면 페이지 로딩을 중단하는 헤더. 구 브라우저용 비표준 기술.
+	- X-Frame-Options: 내 페이지를 프레임 내부에 렌더링하는 것을 허용할지 기술
+	- Permissions-Policy: 웹사이트에서 사용할 수 있는 기능과 없는 기능을 명시적으로 선언
+	- X-Content-Type-Options
+		- MIME: Multipurpose Internet Mail Extensions
+		- Content-type 헤더에서 제공하는 MIME 유형이 브라우저에 의해 임의로 변경되지 않게 하는 헤더
+			- ex. Content-type: application/javascript 헤더가 있는 파일만 브라우저가 자바스크립트로 해석할 수 있다.
+	- Referrer-Policy
+		- 오타 킹받네
+		- Referrer 헤더에서 사용할 수 있는 데이터를 명시
+		- same-origin / cross-origin
+			- 893p 표 이해하신 분
+	- Content-Security-Policy
+		- Next.js <Image/>에서 config에 명시한 도메인 이미지만 가져올 수 있게 하는 거 이거 사용한건가?
+	- Next.js에서 보안 헤더 설정하기
+		- HTTP 경로 별로 헤더 설정 가능 `next.config.js`
+- 패키지 사용 주의하자
